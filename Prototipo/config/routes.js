@@ -34,8 +34,11 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
+  '/turnos':{
+    view:'turnos'
+  },
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
