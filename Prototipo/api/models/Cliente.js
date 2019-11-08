@@ -17,6 +17,16 @@ module.exports = {
       model:"Rol",
       required:true
     },
+    clienteTurno:{
+      model:"Turno",
+      required:true
+    },
+
+    clienteVentanilla:{
+      model:"Ventanilla",
+      required:true
+    },
+
     clienteCorreo:{
       type:"email",
       unique: true,
@@ -31,9 +41,6 @@ module.exports = {
       type:"string",
     },
     clienteCi:{
-      type:"string",
-    },
-    clienteTurno:{
       type:"string",
     },
     clienteEstado:{

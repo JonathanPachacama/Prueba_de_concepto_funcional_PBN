@@ -7,6 +7,8 @@
   <div class="contenedor">
     <div class="row">
       <div class="col-md-6">
+
+
         <table class="table">
           <thead>
           <tr>
@@ -15,10 +17,15 @@
           </tr>
           </thead>
           <tbody>
+          <% for(var i=0; i<cliente.length; i++) {%>
           <tr>
-            <th scope="row"></th>
-            <td>Mark</td>
+            <th scope="row"><%= cliente[i].clienteTurno %></th>
+            <td>2</td>
           </tr>
+
+          <% } %>
+
+
           </tbody>
         </table>
       </div>

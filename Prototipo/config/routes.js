@@ -37,8 +37,25 @@ module.exports.routes = {
   },
 
   '/turnos':{
-    view:'turnos'
+    controller: "ClienteController",
+    action: "accederTurnosCliente"
   },
+  '/TouchScreen':{
+    controller: "ClienteController",
+    action: "escogerTurnosCliente"
+  },
+
+  '/controlAgente':{
+    controller: "AgenteController",
+    action: "controlarTurnosCliente"
+  },
+
+
+  '/Admin':{
+    controller: "AdministradorController",
+    action: "configuraciones"
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
